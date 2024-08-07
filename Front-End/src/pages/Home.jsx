@@ -1,6 +1,7 @@
 import React from 'react';
 
-
+// *** Test fetch ***
+// import { useFetch } from '../components/Fetch';
 
 
 function Home() {
