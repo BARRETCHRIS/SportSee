@@ -1,0 +1,23 @@
+@import '../../sass/variables';
+
+.active{
+    text-decoration: underline;
+}
+
+.nav{
+    width: 70%;
+    color: $light-color;
+    margin: auto 0;
+
+    &_list{
+        display: flex;
+        justify-content: space-around;
+        vertical-align: middle;
+        font-size: 24px;
+        font-weight: 500;
+
+        &_item:hover{
+            color: $primary-color;
+        }
+    }
+}

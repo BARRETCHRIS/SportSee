@@ -1,0 +1,48 @@
+@import '../../sass/variables';
+
+.HomeUserChoise{
+    fieldset{
+        width: 60%;
+        margin: 0 auto;
+        border: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &_label{
+        min-width: 35%;
+        margin-top: 10px;
+        display: flex;
+        font-size: 14px;
+        font-weight: 500;
+        justify-content: space-around;
+        gap: 5px;
+
+        &_input{
+            appearance: none; 
+            width: 15px;
+            height: 15px;
+            border: 1px solid $primary-color;
+            border-radius: 5%;
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+
+            &:checked{
+                background-color: $primary-color;
+            }
+
+            &:checked::before {
+                content: ''; 
+                position: absolute; 
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg); 
+                width: 5px;
+                height: 10px; 
+                border: solid white; 
+                border-width: 0 2px 2px 0;
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 /**
- * Custom hook to fetch data from an API, and if it fails, fallback to mocked data.
+ * Custom hook to fetch data from an API, and if it fails, fallback to mocked data in public folder.
  *
  * @param {string} urlAPI - The URL of the API.
  * @param {string} userID - The userID for the mocked data.
