@@ -7,7 +7,7 @@ const {
 
 /**
  * @description Retrieve the main user info (first name, last name, today score)
- * @param {number} id 
+ * @param {number} id
  */
 const getUserById = id => USER_MAIN_DATA
     .filter(user => user.id === id)

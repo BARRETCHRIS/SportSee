@@ -2,11 +2,11 @@
     {
         "id": 12,
         "userInfos": {
-            "firstName": "Karl",
+            "firstName": "Karl-Mocked",
             "lastName": "DovineauMocked",
             "age": 31
         },
-        "todayScore": 0.12,
+        "todayScore": 0.50,
         "keyData": {
             "calorieCount": 1930,
             "proteinCount": 155,
@@ -17,7 +17,7 @@
     {
         "id": 18,
         "userInfos": {
-            "firstName": "Cecilia",
+            "firstName": "Cecilia-Mocked",
             "lastName": "RatorezMocked",
             "age": 34
         },

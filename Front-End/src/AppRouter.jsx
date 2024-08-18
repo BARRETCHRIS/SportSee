@@ -8,6 +8,13 @@ import Cluster from './pages/Cluster';
 import Error404 from './pages/Error404';
 import { UserSelectorProvider } from './context/UserSelector'; // Import du UserSelectorProvider
 
+/**
+ * Main application router component that sets up routing for the SportSee application.
+ *
+ * @component
+ * @category Routing
+ * @returns { React.Component } A React component that provides routing functionality
+ */
 function AppRouter() {
   return (
     <Router>
@@ -15,7 +22,7 @@ function AppRouter() {
         <Header />
         <AsideNav />
         <Routes>
-          {/* Redirections */}
+          {/* Redirections : Redirect old or alternative paths to the updated paths */}
           <Route path="/accueil" element={<Navigate to="/" />} />
           <Route path="/home" element={<Navigate to="/" />} />
           <Route path="/reglages" element={<Navigate to="/tuning" />} />
@@ -24,12 +31,12 @@ function AppRouter() {
           <Route path="/community" element={<Navigate to="/cluster" />} />
           <Route path="/communaute" element={<Navigate to="/cluster" />} />
 
-          {/* Routes normales */}
-          <Route path="/" element={<Home />} />
-          <Route path="/profile/:userID" element={<Profile />} /> {/* Composant Profile avec l'ID utilisateur */}
-          <Route path="/tuning" element={<Tuning />} />
-          <Route path="/cluster" element={<Cluster />} />
-          <Route path="*" element={<Error404 />} />
+          {/* Routes normales : Define the routes for the application */}
+          <Route path="/" element={<Home />} /> {/* Home page */}
+          <Route path="/profile/:userID" element={<Profile />} /> {/* Profile page with user ID parameter */}
+          <Route path="/tuning" element={<Tuning />} /> {/* Tuning page */}
+          <Route path="/cluster" element={<Cluster />} /> {/* Cluster page */}
+          <Route path="*" element={<Error404 />} /> {/* Fallback route for unmatched paths */}
         </Routes>
       </UserSelectorProvider>
     </Router>

@@ -6,7 +6,10 @@ import 'normalize.css';
 import './sass/main.scss'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <AppRouter />
-  </React.StrictMode>
+  // <React.StrictMode>
+  //   <AppRouter />
+  // </React.StrictMode>
+
+  //  For pb twice call datas
+  <AppRouter />
 );
