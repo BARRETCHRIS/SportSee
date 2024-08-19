@@ -34,6 +34,7 @@ function AppRouter() {
           {/* Routes normales : Define the routes for the application */}
           <Route path="/" element={<Home />} /> {/* Home page */}
           <Route path="/profile/:userID" element={<Profile />} /> {/* Profile page with user ID parameter */}
+          <Route path="/profile" element={<Error404 />} /> {/* Profile page with user ID parameter */}
           <Route path="/tuning" element={<Tuning />} /> {/* Tuning page */}
           <Route path="/cluster" element={<Cluster />} /> {/* Cluster page */}
           <Route path="*" element={<Error404 />} /> {/* Fallback route for unmatched paths */}

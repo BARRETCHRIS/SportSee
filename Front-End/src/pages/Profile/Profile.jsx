@@ -19,7 +19,7 @@ import cheesburger from '../../assets/cheesburger.svg';
 import './profile.scss';
 
 // switch type of data used
-const useMockedData = true;
+const useMockedData = false;
 
 /**
  * Render the user profile page for the SportSee application.
