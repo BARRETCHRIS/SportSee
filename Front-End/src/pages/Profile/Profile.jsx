@@ -19,7 +19,7 @@ import cheesburger from '../../assets/cheesburger.svg';
 import './profile.scss';
 
 // switch type of data used
-const useMockedData = false;
+const useMockedData = true;
 
 /**
  * Render the user profile page for the SportSee application.
@@ -85,15 +85,27 @@ function Profile() {
         isLoadingActivity ||
         isLoadingAverageSessions ||
         isLoadingPerformance
-    )
-        return <p>Loading...</p>;
+    )     
+        return(
+            <main>
+                <p>Loading...</p>;
+            </main>
+        ) 
+
     if (
         errorMainAPI ||
         errorActivityAPI ||
         errorAverageSessionsAPI ||
         errorPerformanceAPI
     )
-        return <p>Error fetching API data.</p>;
+        return(
+            <main>
+                <h2>Erreur 500<br />Oups! Nous rencontrons un problème technique.<br />Merci de revenir ultérieurement</h2>
+                <h2>Error 500<br />Oops! We are experiencing a technical problem.<br />Please try again later</h2>
+
+            </main>
+        )
+            
 
     // Sélection des données à afficher (API ou mockées)
     const userData = mainData;
